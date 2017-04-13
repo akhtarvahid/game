@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: lightgreen;
+		}
+		button{
+			background-color: black;
+			color: white;
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+  <div ng-controller="game" style="margin-left: 100px;width: 300px">
+  <h1>Game</h1><br/>
+  <h4>You have {{user}} INR</h4><br/>
+  <button  ng-show="show" ng-click="startGame()">Start</button><br/><br/>
+  <span>{{digits}}</span></br>
+  <span>{{status}}</span>
+   </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+ <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
